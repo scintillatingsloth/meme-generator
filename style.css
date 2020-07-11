@@ -1,0 +1,26 @@
+#meme_text {
+  color: white;
+  font-size: 40px;
+  font-family: "Impact";
+  position: absolute;
+  top: 450px;
+  left: 500px;
+  width: 600px;
+}
+
+body {
+  background-color: black;
+}
+
+label {
+  color: white;
+}
+
+p {
+  color: white;
+}
+
+form {
+  margin: auto;
+  width: 50%;
+}

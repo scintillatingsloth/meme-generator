@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form>
+      <label for="user_text">Meme text:</label>
+      <input
+        type="text"
+        id="user_text"
+        maxlength="70"
+        onInput="update_text()"
+      />
+      <p>
+        <label for="user_picture">Select image for meme</label>
+        <input type="file" id="user_picture" onInput="update_image()" />
+      </p>
+      <div>
+        <p>Click to align text:</p>
+        <label for="center_align">Center</label>
+        <input type="radio" id="center_align" onclick="center()" />
+        <p>
+          <label for="left_align">Left</label>
+          <input type="radio" id="left-align" onclick="left()" />
+        </p>
+        <p>
+          <label for="right-align">Right</label>
+          <input type="radio" id="right-align" onclick="right()" />
+        </p>
+      </div>
+
+      <!-- <div>
+        <p>Click to change font size</p>
+        <label for="small-font">Small Font</label>
+        <input 
+      </div> -->
+      <div id="meme_text">Example Text Here</div>
+      <div id="meme_picture"><img src="" height="500" width="650" /></div>
+    </form>
+    <script src="app.js"></script>
+  </body>
+</html>
